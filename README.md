@@ -1,45 +1,26 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+Sovos Challenge
+Challenge 1 - UI
+Based on the search functionality of the Amazon website describe test scenarios using equivalence class partitioning (ECP) to assure that everything is working as it is expected for an e-commerce web page. After that, choose an automation framework and implement the described test scenarios, you can use any language or framework (only open-source frameworks).
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+https://www.amazon.com
+Challenge 2 - API
+Get Notifications: * https://api.mocki.io/v1/4862d8e7
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+You need to test a GET notifications API that retrieves notifications and check that the following requirements are satisfied:
 
----
+should return notifications for the following countries: BR, AR
+perPage value should correspond to the number of notifications retrieved
+content of notifications should be a xml encoded on Base64
+notificationId should be a valid GUID
+notificationId should correspond to ID inside content xml document
+200 notifications should have "Document Authorized" on StatusReason and "Document authorized successfully" on Text fields inside content xml document
+400 notifications should have "Document Rejected" on StatusReason and "Document was rejected by tax authority" on Text fields inside content xml document
+Automation should display a warn in case of any rejected notification
+Describe test scenarios for the given requirements using ECP, after that, choose an automation framework and implement the described test scenarios, you can use any language or framework (only open-source frameworks).
 
-## Edit a file
+Make a fork of this repository and submit a pull request with your solutions! Good luck!
+The use of automation design patters will be a differential.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Please, include in the README all the information needed to run the project!
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
-
----
-
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+Don't forget to add all scenarios that you described using ECP in a specific session of your README, this has a lot of weight in the evaluation!!
