@@ -2,28 +2,28 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "Search functionality",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Feature",
   "tags": [
     {
       "name": "@wip"
     }
   ]
 });
+formatter.scenarioOutline({
+  "name": "",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
 formatter.step({
-  "name": "the user start typing any \"\u003cchars\u003e\" in text box",
+  "name": "the user enters \"\u003ckeyword\u003e\" on the search box",
   "keyword": "When "
 });
 formatter.step({
-  "name": "drop down suggestions should appear",
+  "name": "the user clicks the search button",
   "keyword": "And "
 });
 formatter.step({
-  "name": "the suggested words should start with the same \"\u003cchars\u003e\"",
+  "name": "the same \"\u003ckeyword\u003e\" should be seen on the result text",
   "keyword": "Then "
 });
 formatter.examples({
@@ -33,17 +33,17 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "chars"
+        "keyword"
       ]
     },
     {
       "cells": [
-        "P"
+        "PS5"
       ]
     },
     {
       "cells": [
-        "PS"
+        "PS4"
       ]
     }
   ]
@@ -77,37 +77,35 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user start typing any \"P\" in text box",
+  "name": "the user enters \"PS5\" on the search box",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theUserStartTypingAnyInTextBox(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_enters_on_the_search_box(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "drop down suggestions should appear",
+  "name": "the user clicks the search button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.dropDownSuggestionsShouldAppear()"
+  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_clicks_the_search_button()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c10\u003e but was:\u003c0\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.amazon.stepDefinitions.MainStepDefs.dropDownSuggestionsShouldAppear(MainStepDefs.java:54)\r\n\tat ✽.drop down suggestions should appear(file:///C:/Users/Hp/IdeaProjects/sovos_challanges/src/test/resources/features/Search.feature:20)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the suggested words should start with the same \"P\"",
+  "name": "the same \"PS5\" should be seen on the result text",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theSuggestedWordsShouldStartWithTheSame(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.MainStepDefs.theSameShouldBeSeenOnTheResultText(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
@@ -140,37 +138,86 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user start typing any \"PS\" in text box",
+  "name": "the user enters \"PS4\" on the search box",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theUserStartTypingAnyInTextBox(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_enters_on_the_search_box(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "drop down suggestions should appear",
+  "name": "the user clicks the search button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.dropDownSuggestionsShouldAppear()"
+  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_clicks_the_search_button()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c10\u003e but was:\u003c0\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.amazon.stepDefinitions.MainStepDefs.dropDownSuggestionsShouldAppear(MainStepDefs.java:54)\r\n\tat ✽.drop down suggestions should appear(file:///C:/Users/Hp/IdeaProjects/sovos_challanges/src/test/resources/features/Search.feature:20)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the suggested words should start with the same \"PS\"",
+  "name": "the same \"PS4\" should be seen on the result text",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theSuggestedWordsShouldStartWithTheSame(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.MainStepDefs.theSameShouldBeSeenOnTheResultText(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", "screenshot");
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is on the home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_is_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user enters \"Mehmet\" on search box",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.MainStepDefs.theUserEntersOnSearchBox(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the suggestions on drop down should start with \"Mehmet\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.MainStepDefs.theSuggestionsOnDropDownShouldStartWith(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

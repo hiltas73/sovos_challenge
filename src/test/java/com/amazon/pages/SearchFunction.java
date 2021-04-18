@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchFunction extends BasePage{
+public class SearchFunction extends BasePage {
 
     public SearchFunction() {
         PageFactory.initElements(Driver.get(), this);
@@ -24,21 +24,10 @@ public class SearchFunction extends BasePage{
     @FindBy(xpath = "//input[@value='Go']")
     public WebElement clickButton;
 
-    @FindBy(xpath = "//span[contains(text(),'\" + keyword + \"')]")
-    public WebElement searchResultText;
-
-//    @FindBy(css = "div[data-keyword]")
-//    public List<WebElement> dropDownSuggestionOptions;
-
     @FindBy(xpath = "//div[@id='suggestions']")
     public List<WebElement> dropDownSuggestionOptions;
 
-    public static void dropDownSuggestion(String chars){
-      //  Driver.get().get("https://www.amazon.com");
-      //  Driver.get().manage().window().fullscreen();
-      //  String searchWord = "Mehmet";
-     //   Driver.get().findElement(By.id("twotabsearchtextbox")).sendKeys(searchWord);
-
+    public static void dropDownSuggestion(String searchWord) {
         WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan((By.cssSelector("div[data-keyword]")), 1));
         List<WebElement> searchSuggestions = Driver.get().findElements(By.cssSelector("div[data-keyword]"));
@@ -52,15 +41,14 @@ public class SearchFunction extends BasePage{
         }
         for (int i = 0; i < suggestions.size(); i++) {
             System.out.println("suggestions.get(i) = " + suggestions.get(i));
-            Assert.assertTrue("Suggestions contains searched keyword", suggestions.get(i).toLowerCase().contains(chars.toLowerCase()));
+            Assert.assertTrue("Suggestions contains searched keyword", suggestions.get(i).toLowerCase().contains(searchWord.toLowerCase()));
         }
         for (WebElement  suggestion : searchSuggestions) {
             System.out.println("s-sugguesss " + suggestion.getText());
         }
     }
-    }
 
-
+}
 
 
 

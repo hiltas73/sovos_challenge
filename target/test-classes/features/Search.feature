@@ -1,4 +1,4 @@
-
+@wip
 Feature: Search functionality
 
   Background:
@@ -14,13 +14,7 @@ Feature: Search functionality
       |PS5     |
       |PS4     |
 
-  @wip
-  Scenario Outline:
-    When the user start typing any "<chars>" in text box
-    And drop down suggestions should appear
-    Then the suggested words should start with the same "<chars>"
 
-    Examples:
-      |chars  |
-      |P      |
-      |PS     |
+    Scenario:
+      When the user enters "Mehmet" on search box
+      Then the suggestions on drop down should start with "Mehmet"
