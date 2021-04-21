@@ -3,32 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3575885000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the home page",
-            "match": {
-              "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_is_on_the_home_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-04-18T21:51:37.821Z",
+        "start_timestamp": "2021-04-21T00:32:22.758Z",
         "before": [
           {
             "result": {
-              "duration": 4549863400,
+              "duration": 5610899600,
               "status": "passed"
             },
             "match": {
@@ -36,228 +15,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "",
+        "line": 3,
+        "name": "Verify that user information can be retrieved",
         "description": "",
-        "id": "search-functionality;;;2",
+        "id": "user-verification;verify-that-user-information-can-be-retrieved",
         "after": [
           {
             "result": {
-              "duration": 1185571000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.amazon.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 482709400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user enters \"PS5\" on the search box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PS5\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_enters_on_the_search_box(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3466614000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user clicks the search button",
-            "match": {
-              "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_clicks_the_search_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 169546700,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the same \"PS5\" should be seen on the result text",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PS5\"",
-                  "offset": 9
-                }
-              ],
-              "location": "com.amazon.stepDefinitions.MainStepDefs.theSameShouldBeSeenOnTheResultText(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3472818600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the home page",
-            "match": {
-              "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_is_on_the_home_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-04-18T21:51:51.432Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2243888100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.amazon.stepDefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "",
-        "description": "",
-        "id": "search-functionality;;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1176768200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.amazon.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 582963800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user enters \"PS4\" on the search box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PS4\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_enters_on_the_search_box(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3620307100,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user clicks the search button",
-            "match": {
-              "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_clicks_the_search_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 146608200,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the same \"PS4\" should be seen on the result text",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PS4\"",
-                  "offset": 9
-                }
-              ],
-              "location": "com.amazon.stepDefinitions.MainStepDefs.theSameShouldBeSeenOnTheResultText(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3531416400,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the home page",
-            "match": {
-              "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_is_on_the_home_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-04-18T21:52:02.684Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2365698600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.amazon.stepDefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "",
-        "description": "",
-        "id": "search-functionality;",
-        "after": [
-          {
-            "result": {
-              "duration": 996167700,
+              "duration": 1975868400,
               "status": "passed"
             },
             "match": {
@@ -270,37 +35,303 @@
         "steps": [
           {
             "result": {
-              "duration": 480730900,
+              "duration": 4699235900,
               "status": "passed"
             },
-            "line": 19,
-            "name": "the user enters \"Mehmet\" on search box",
+            "line": 4,
+            "name": "I get the current user information from api",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Mehmet\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.amazon.stepDefinitions.MainStepDefs.theUserEntersOnSearchBox(java.lang.String)"
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.i_get_the_current_user_information_from_api()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-21T00:32:35.287Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3220204400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Verify that system must not permit duplicate users",
+        "description": "",
+        "id": "user-verification;verify-that-system-must-not-permit-duplicate-users",
+        "after": [
+          {
+            "embeddings": [
+              {
+                "data": "iVBORw0KGgoAAAANSUhEUgAABQ8AAANLCAYAAADvoGvvAAAAAXNSR0IArs4c6QAAF51JREFUeJzs2LERwCAQwLCQ/Xd+es49FNIErr1mZj4AAAAAgMN/OwAAAAAAeJN5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAAAASOYhAAAAAJDMQwAAAAAgmYcAAAAAQDIPAQAAAIBkHgIAAAAAyTwEAAAAAJJ5CAAAAAAk8xAAAABgt2MHAgAAAACC/K0XGKEwApY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAJY8BAAAAACWPAQAAAAAljwEAAAAAFbeJgqSwj0VrQAAAABJRU5ErkJggg\u003d\u003d",
+                "mime_type": "image/png",
+                "name": "screenshot"
+              }
+            ],
+            "result": {
+              "duration": 1951148000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 528586700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I repost existing user information",
+            "match": {
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.i_repost_existing_user_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1021724500,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(ApiStepDefs.java:44)\r\n\tat ✽.status code should be 400(file:///C:/Users/Hp/IdeaProjects/sovos_challanges/src/test/resources/features/user.feature:8)\r\n",
+              "duration": 5984100,
+              "status": "failed"
             },
-            "line": 20,
-            "name": "the suggestions on drop down should start with \"Mehmet\"",
+            "line": 8,
+            "name": "status code should be 400",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Mehmet\"",
-                  "offset": 47
+                  "val": "400",
+                  "offset": 22
                 }
               ],
-              "location": "com.amazon.stepDefinitions.MainStepDefs.theSuggestionsOnDropDownShouldStartWith(java.lang.String)"
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-21T00:32:41.026Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3022148100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "New user should be able to register",
+        "description": "",
+        "id": "user-verification;new-user-should-be-able-to-register",
+        "after": [
+          {
+            "result": {
+              "duration": 2574586800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 177086900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I post a new user information",
+            "match": {
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.iPostANewUserInformation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-21T00:32:46.854Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3475526200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Retrieve registered user information",
+        "description": "",
+        "id": "user-verification;retrieve-registered-user-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2191791800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 157036500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I send get request using 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 25
+                }
+              ],
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.iSendGetRequestUsing(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-21T00:32:52.705Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4522539300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Retrieve registered user information",
+        "description": "",
+        "id": "user-verification;retrieve-registered-user-information;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 3977311700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.amazon.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 159596200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I send get request using 11",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 25
+                }
+              ],
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.iSendGetRequestUsing(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "status code should be 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 22
+                }
+              ],
+              "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
             },
             "keyword": "Then "
           }
@@ -312,11 +343,11 @@
         ]
       }
     ],
-    "name": "Search functionality",
+    "name": "User Verification",
     "description": "",
-    "id": "search-functionality",
+    "id": "user-verification",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Search.feature",
+    "uri": "file:src/test/resources/features/user.feature",
     "tags": [
       {
         "name": "@wip",

@@ -1,6 +1,5 @@
 package com.amazon.stepDefinitions;
 
-import com.amazon.utilities.DBUtils;
 import com.amazon.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -23,18 +22,6 @@ public class Hooks {
             scenario.attach(screenshot,"image/png","screenshot");
         }
         Driver.closeDriver();
-    }
-
-    @Before("@db")
-    public void setUpdb(){
-
-        DBUtils.createConnection();
-
-    }
-    @After("@db")
-    public void closeDb(){
-
-        DBUtils.destroy();
     }
 
 }

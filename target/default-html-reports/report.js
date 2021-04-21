@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Search.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/user.feature");
 formatter.feature({
-  "name": "Search functionality",
+  "name": "User Verification",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -9,21 +9,117 @@ formatter.feature({
     }
   ]
 });
+formatter.scenario({
+  "name": "Verify that user information can be retrieved",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I get the current user information from api",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.i_get_the_current_user_information_from_api()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify that system must not permit duplicate users",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I repost existing user information",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.i_repost_existing_user_information()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "status code should be 400",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
+});
+formatter.result({
+  "error_message": "java.lang.AssertionError: expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(ApiStepDefs.java:44)\r\n\tat ✽.status code should be 400(file:///C:/Users/Hp/IdeaProjects/sovos_challanges/src/test/resources/features/user.feature:8)\r\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded0.png", "screenshot");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "New user should be able to register",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I post a new user information",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.iPostANewUserInformation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "status code should be 200",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 formatter.scenarioOutline({
-  "name": "",
+  "name": "Retrieve registered user information",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "the user enters \"\u003ckeyword\u003e\" on the search box",
+  "name": "I send get request using \u003cID\u003e",
   "keyword": "When "
 });
 formatter.step({
-  "name": "the user clicks the search button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "the same \"\u003ckeyword\u003e\" should be seen on the result text",
+  "name": "status code should be \u003cStatusCode\u003e",
   "keyword": "Then "
 });
 formatter.examples({
@@ -33,41 +129,26 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "keyword"
+        "ID",
+        "StatusCode"
       ]
     },
     {
       "cells": [
-        "PS5"
+        "1",
+        "200"
       ]
     },
     {
       "cells": [
-        "PS4"
+        "11",
+        "404"
       ]
     }
   ]
 });
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user is on the home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_is_on_the_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "",
+  "name": "Retrieve registered user information",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -76,32 +157,25 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "the user enters \"PS5\" on the search box",
+  "name": "I send get request using 1",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_enters_on_the_search_box(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.iSendGetRequestUsing(int)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks the search button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_clicks_the_search_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the same \"PS5\" should be seen on the result text",
+  "name": "status code should be 200",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theSameShouldBeSeenOnTheResultText(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
 });
 formatter.result({
   "status": "passed"
@@ -109,26 +183,8 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user is on the home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_is_on_the_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "",
+  "name": "Retrieve registered user information",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -137,83 +193,25 @@ formatter.scenario({
     }
   ]
 });
-formatter.step({
-  "name": "the user enters \"PS4\" on the search box",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_enters_on_the_search_box(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks the search button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_clicks_the_search_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the same \"PS4\" should be seen on the result text",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theSameShouldBeSeenOnTheResultText(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is on the home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.the_user_is_on_the_home_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user enters \"Mehmet\" on search box",
+  "name": "I send get request using 11",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theUserEntersOnSearchBox(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.iSendGetRequestUsing(int)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the suggestions on drop down should start with \"Mehmet\"",
+  "name": "status code should be 404",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.amazon.stepDefinitions.MainStepDefs.theSuggestionsOnDropDownShouldStartWith(java.lang.String)"
+  "location": "com.amazon.stepDefinitions.ApiStepDefs.statusCodeShouldBe(int)"
 });
 formatter.result({
   "status": "passed"
